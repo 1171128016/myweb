@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>myweb</display-name>
+  	<servlet>
+		<servlet-name>GetCommentServlet</servlet-name>
+		<servlet-class>controller.GetCommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCommentServlet</servlet-name>
+		<url-pattern>/servlet/GetCommentServlet</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+		<servlet-name>GetLabelTextServlet</servlet-name>
+		<servlet-class>controller.GetLabelTextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetLabelTextServlet</servlet-name>
+		<url-pattern>/servlet/GetLabelTextServlet</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+		<servlet-name>GetLeftTextServlet</servlet-name>
+		<servlet-class>controller.GetLeftTextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetLeftTextServlet</servlet-name>
+		<url-pattern>/servlet/GetLeftTextServlet</url-pattern>
+	</servlet-mapping>
+  
+    <servlet>
+		<servlet-name>GetTextServlet</servlet-name>
+		<servlet-class>controller.GetTextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTextServlet</servlet-name>
+		<url-pattern>/servlet/GetTextServlet</url-pattern>
+	</servlet-mapping>
+  
+   <servlet>
+		<servlet-name>GetTimeServlet</servlet-name>
+		<servlet-class>controller.GetTimeTextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTimeServlet</servlet-name>
+		<url-pattern>/servlet/GetTimeServlet</url-pattern>
+	</servlet-mapping>
+  
+  
+    <servlet>
+		<servlet-name>GetTimeTextServlet</servlet-name>
+		<servlet-class>controller.GetTimeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTimeTextServlet</servlet-name>
+		<url-pattern>/servlet/GetTimeTextServlet</url-pattern>
+	</servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
